@@ -1,0 +1,33 @@
+ <div class="cart" *ngIf="afAuth.authState | async as user" style="overflow: scroll;">
+  <div id="name" style= "capacity = 0.9">
+ <p style = "margin-left:-295px;margin-top:0px;margin-bottom:-100px;"><span>{{user.displayName}}</span></p>
+	<button class="nav-link" (click)="authService.signOut()" style = "width:140px;height:85px;margin-left:-300px;margin-top:-120px;"><p style= "margin:auto;">sign out</p></button>
+   <b> Load 3D Model</b>
+
+  </div>
+
+  <button type="button" style="margin-bottom:400px;" onclick="location.href='http://178.159.160.204:4200/cards1'">
+      <p style = "margin:auto;">Test.stl</p> 
+</button> 
+
+<button type="button" style="margin-bottom:150px;margin-left:-500px;" onclick="location.href='http://178.159.160.204:4200/cards2'">
+  <p style= "margin:auto;">Mundial.obj</p> 
+</button>
+
+<button type="button" style="margin-bottom:-100px;margin-left:-500px;" onclick="location.href='http://178.159.160.204:4200/cards3'">
+  <p style= "margin:auto;">Sticks.obj</p> 
+</button>
+
+<button type="button" style="margin-bottom:-350px;margin-left:-500px;" onclick="location.href='http://178.159.160.204:4200/cards4'">
+  <p style= "margin:auto;">Authors.stl</p> 
+</button>
+<button type="button" style="margin-bottom:-600px;margin-left:-500px;" onclick="location.href='http://178.159.160.204:4200/cards'">
+  <p style= "margin:auto;">Upload</p> 
+</button>
+
+
+  </div>
+  
+  <div class="cart">
+    <img src="assets/22.png" alt="obrazek" class="cart" style='height: 100%; width: 100%; object-fit: contain;'/>
+  </div>

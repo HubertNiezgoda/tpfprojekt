@@ -1,0 +1,30 @@
+ <style>
+app-login {
+  background-image: url('assets/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style> 
+
+<div class="cart">
+  <div id="name">
+   <b> G-code Viewer</b>
+
+  </div>
+
+  <button type="button"  (click)="authService.GoogleAuth()" >
+      <img src="assets/google1.png" alt="google" style='height: 70px; width: 70px; margin-left:-300px;' ><p>Authenticate with Google</p> 
+</button>
+
+  </div>
+  <div class="cart">
+    <img src="assets/Gcode.png" alt="obrazek" class="cart" style='height: 100%; width: 100%; object-fit: contain;'/>
+  </div>
+
+  <div id="footer">
+  Autorzy : Hubert Niezgoda <br>
+  Tomasz Seruga <br>
+  Jonatan Kozdeba-Lojek <br>
+  Bartosz Niemczyk
+  </div> 
